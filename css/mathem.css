@@ -1,5 +1,7 @@
+@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro:400,700);
 body {
-  padding-top: 60px; }
+  padding-top: 10px;
+  display: none; }
 
 #logo {
   color: #444;
@@ -11,32 +13,92 @@ body {
     font-size: .7em;
     line-height: .7em; }
 
-.primary-tab ul.nav li > a > .icon-chevron-right {
-  float: right;
-  margin-top: 0px;
-  margin-right: -6px;
-  opacity: .25; }
-.primary-tab ul.nav li.active > a > .icon-chevron-right, .primary-tab ul.nav li.active > a:hover > .icon-chevron-right {
-  opacity: 1.0 !important; }
+#categories-container {
+  overflow: visible; }
 
-section.section h2, section.section h3, section.section h4 {
-  margin-top: 0;
-  line-height: 30px; }
-section.section h4 {
-  line-height: 20px; }
-section.section li.step {
-  padding: 0 0 30px; }
-  section.section li.step, section.section li.step > div {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
-  section.section li.step div.index {
-    font-weight: bold; }
-  section.section li.step div.title {
-    padding-left: 20px; }
-  section.section li.step div.result {
-    padding-left: 20px;
-    color: green; }
+.primary-tab {
+  display: none;
+  /* Chevrons */ }
+  .primary-tab ul.nav {
+    margin: 60px 0;
+    padding: 0;
+    background-color: #fff;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+    width: 258px; }
+  .primary-tab ul.nav > li > a {
+    display: block;
+    *width: 190px;
+    margin: 0 0 -1px;
+    padding: 8px 14px;
+    border: 1px solid #e5e5e5;
+    font-size: .9em; }
+  .primary-tab ul.nav > li:first-child > a {
+    -webkit-border-radius: 6px 6px 0 0;
+    -moz-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0; }
+  .primary-tab ul.nav > li:last-child > a {
+    -webkit-border-radius: 0 0 6px 6px;
+    -moz-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px; }
+  .primary-tab ul.nav > .active > a {
+    position: relative;
+    z-index: 2;
+    padding: 9px 15px;
+    border: 0;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.1), inset -1px 0 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.1), inset -1px 0 0 rgba(0, 0, 0, 0.1);
+    box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.1), inset -1px 0 0 rgba(0, 0, 0, 0.1); }
+  .primary-tab ul.nav .icon-chevron-right {
+    float: right;
+    margin-top: 2px;
+    margin-right: -6px;
+    opacity: .25; }
+  .primary-tab ul.nav > li:not(.active) > a:hover {
+    background-color: #f5f5f5; }
+  .primary-tab ul.nav a:hover .icon-chevron-right {
+    opacity: .5; }
+  .primary-tab ul.nav .active .icon-chevron-right,
+  .primary-tab ul.nav .active a:hover .icon-chevron-right {
+    background-image: url(../img/glyphicons-halflings-white.png);
+    opacity: 1; }
+  .primary-tab ul.nav.affix {
+    top: 0px; }
+  .primary-tab ul.nav.affix-bottom {
+    position: absolute;
+    top: auto;
+    bottom: 270px; }
+
+section.section {
+  padding-top: 40px; }
+  section.section h1, section.section h2, section.section h3, section.section h4 {
+    margin-top: 0;
+    line-height: 30px; }
+  section.section h4 {
+    line-height: 20px; }
+  section.section li.step {
+    padding: 0 0 30px; }
+    section.section li.step, section.section li.step > div {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+    section.section li.step div.index {
+      font-weight: bold; }
+    section.section li.step div.title {
+      padding: 10px 20px; }
+    section.section li.step pre.result {
+      font-size: 1.2em;
+      font-weight: bold;
+      padding-left: 20px;
+      font-family: 'Anonymous Pro', 'Consolas', monospace; }
+      section.section li.step pre.result em {
+        border-bottom: 2px #8eb320 solid;
+        font-style: normal; }
 
 /* Landscape phones and down */
 /* Landscape phone to portrait tablet */
