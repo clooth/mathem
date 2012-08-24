@@ -1,0 +1,81 @@
+body {
+	padding-top: 60px;
+}
+
+#logo {
+	color: #444;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: 0px 1px 0px #fff;
+	span {
+		color: #aaa;
+		font-size: .7em;
+		line-height: .7em;
+	}
+}
+
+.primary-tab {
+	ul.nav li {
+		& > a > .icon-chevron-right {
+			float: right;
+			margin-top: 0px;
+			margin-right: -6px;
+			opacity: .25;
+		}
+
+		&.active > a > .icon-chevron-right,
+		&.active > a:hover > .icon-chevron-right {
+			opacity: 1.0 !important;
+		}
+	}
+}
+
+section.section {
+	h2, h3, h4 {
+		margin-top: 0;
+		line-height: 30px;
+	}
+	h4 {
+		line-height: 20px;
+	}
+
+	li.step {
+		padding: 0 0 30px;
+		&, & > div {
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		div.index {
+			font-weight: bold;
+		}
+		div.title {
+			padding-left: 20px;
+		}
+		div.result {
+			padding-left: 20px;
+			color: green;
+		}
+	}
+}
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+}

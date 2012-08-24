@@ -1,0 +1,44 @@
+body {
+  padding-top: 60px; }
+
+#logo {
+  color: #444;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0px 1px 0px #fff; }
+  #logo span {
+    color: #aaa;
+    font-size: .7em;
+    line-height: .7em; }
+
+.primary-tab ul.nav li > a > .icon-chevron-right {
+  float: right;
+  margin-top: 0px;
+  margin-right: -6px;
+  opacity: .25; }
+.primary-tab ul.nav li.active > a > .icon-chevron-right, .primary-tab ul.nav li.active > a:hover > .icon-chevron-right {
+  opacity: 1.0 !important; }
+
+section.section h2, section.section h3, section.section h4 {
+  margin-top: 0;
+  line-height: 30px; }
+section.section h4 {
+  line-height: 20px; }
+section.section li.step {
+  padding: 0 0 30px; }
+  section.section li.step, section.section li.step > div {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  section.section li.step div.index {
+    font-weight: bold; }
+  section.section li.step div.title {
+    padding-left: 20px; }
+  section.section li.step div.result {
+    padding-left: 20px;
+    color: green; }
+
+/* Landscape phones and down */
+/* Landscape phone to portrait tablet */
+/* Portrait tablet to landscape and desktop */
+/* Large desktop */
